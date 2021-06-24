@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Project Documentations</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="icon" href="../static/images/houseicon.png" type="image/icon type">
+    <!-- CSS file-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/style.css">
+
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div id="head" class="col-md-12 jumbotron text-center">
+
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <img src="../static/images/cat2.jpeg" width=50 height=50 />
+                    <a class="navbar-brand" href="team"><strong>The PsyCat Learners</strong></a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li><a href="/">  HOME</a></li>
+                    <li><a href="visuals">  DATA VISUALIZATIONS</a></li>
+                    <li><a href="predictprice">  PRICE PREDICTIONS</a></li>
+                    <li class="active"><a href="documentation">  PROJECT DOCUMENTATION</a></li>
+                    <li>
+                        <a href="https://github.com/kfmatovic716/CA-HOME-PRICE-PREDICTIONS---Final-Project.git"><img class="github" src="../static/images/github.png" height=20 width=20 /></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <div id="methods" class="col-md-12">
+            <div class="card">
+                <h2 class="card-title"><strong>Methodology for the Machine Learning Algorithm</strong></h2>
+                <hr>
+                <h3><strong>Data Description</strong></h3>
+                <ul><h4>
+                    <li>The real estate website Zillow has a variety of free smoothed, seasonally adjusted datasets of monthly home prices gathered from Multiple Listing Services (MLS's) and presented as an index by zip code for every state in the US stretching
+                        back to 1996. </li>
+                    <li>We selected all California zip codes (1,746) with a monthly look-back of three years (2018-2021) for 1 bdrm - 5 bdrm, single family homes, and condos.</li></h4>
+                </ul>
+                <h3><strong>Data Transformations</strong></h3>
+                <ul><h4>
+                    <li>Many zip codes in California in locales such as Orange County, the Bay Area or San Diego had average prices greater than $750,000. We scaled the data by dividing each observation by $1,000,000, to improve the model's speed and remove
+                        any impacts of higher vs lower priced homes. Once the model had trained, we reversed the effect of the scaling by multiplying the observations by $1,000,000.</li>
+                    <li>Other transformations e.g. Standard Scaler or MinMax were tried but had no impact on model speed.</li></h4>
+                </ul>
+                <h3><strong>Assumptions</strong></h3>
+                <ul><h4>
+                    <li>Machine learning models do not perform with blank cells. Blanks occurred because some MLS's began to report pricing after certain periods e.g. 2003.</li>
+                    <li>To remove blanks, we assigned a blank cell a value equal to to value in the same zip code 12 months later.</li></h4>
+                </ul>
+                <h3><strong>Machine Learning Model Methodology</strong></h3>
+                <ul><h4>
+                    <li>We divided the data into three parts: a training set comprising approximately 1,200 rows, a validation set comprising approximately 1-200 rows with the remainder comprising the test set.</li>
+                    <li>The random seed value was set to 42 to make our model repeatable. Using an Long Short Term Memory model (LSTM) we added 3 layers with 128 neurons, trained over a period of 100 epochs. We note that we experimented with other layer combinations
+                        and ranges of epochs from 50 to 300 but settled on 100 to reduce the risk of over-fitting.</li></h4>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="datainfo" class="col-md-4">
+                <div class="card">
+                    <h2 class="card-title"><strong>Data Sources</strong></h2>
+                    <hr>
+                    <ul><h4>
+                        <li>House Price data - <a href="https://www.zillow.com/research/data/ ">Zillow website</a></li>
+                        <li>Hospital Ratings data - <a href="https://www.kaggle.com/center-for-medicare-and-medicaid/hospital-ratings ">Kaggle </a></li>
+                        <li>Unemployment Data - <a href="https://data.edd.ca.gov/Labor-Force-and-Unemployment-Rates/Local-Area-Unemployment-Statistics-LAUS-/e6gw-gvii">Socrata API</a></li></h4>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="tools" class="col-md-4">
+                <div class="card">
+                    <h2 class="card-title"><strong>Libraries & Tools</strong></h2>
+                    <hr>
+                    <ul><h4>
+                        <li>Python/Pandas</li>
+                        <li>Colaboratory</li>
+                        <li>Flask App</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>SQL(pgAdmin4)</li>
+                        <li>Tableau</li>
+                        <li>JavaScript</li>
+                        <li>Leaflet</li>
+                        <li>Bootstrap</li>
+                        <li>Jupyter</li></h4>
+                    </ul>
+                </div>
+            </div>
+
+        </div>

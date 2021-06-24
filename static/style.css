@@ -1,0 +1,102 @@
+#head {
+	color: green;
+    font-weight: bolder;
+	font-family: Garamond;
+	background-image: url("images/houseselect2.jpeg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	padding-left: 50px;
+    height: 380px;
+}
+
+/* .navbar {
+    height:auto;
+    width: 960px;
+    margin-left: 80px;
+    margin-right:80px
+} */
+
+img{
+    padding:0;
+}
+body{
+    background-color: #e6ffe6;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#form {
+    background-color: lightgrey;
+    height: 350px;
+    margin-bottom: 50px;
+    margin-right: 20px;
+    margin-left: 50px;
+    padding-top: 5px;
+}
+
+
+#map {
+    height: 800px;
+}
+
+
+button {
+   text-align: center;
+    margin-top: 20px;
+    margin-left: 30%;
+    border: 3px solid green
+
+}
+
+.card {
+    padding: 4.5rem;
+    margin: 10px;
+    background: #edc0bf;
+    background: linear-gradient(90deg, lightgrey 0, #ffe6cc 58%);
+    padding: 2rem;
+    border-radius: 1rem;
+  }
+
+
+.form-select {
+    width: 150px;
+    height: 40px;
+    background-color: whitesmoke;
+}
+
+#team {
+    width: 650px;
+    height: auto;
+    /* background: #dfbf9f; */
+}
+
+#methods {
+    width: 1100px;
+    height: auto;
+    /* background: #dfbf9f; */
+    margin-right:10px;
+    margin-top:10px;
+}
+
+.form-floating {
+    margin-top: 20px;
+}
+
+
+#tools, #datainfo {
+    width: 400px;
+    height: auto;
+    /* background: #dfbf9f;  */
+    margin-top:10px;
+    margin-left:15px;
+    margin-bottom:10px;
+}
+
+.github {
+    margin-left:5px;
+}
+
+/* tableau viz */
+#viz1623472718293, #viz1623510542724 {
+    border:rgb(0, 153, 153) 3px solid;
+}

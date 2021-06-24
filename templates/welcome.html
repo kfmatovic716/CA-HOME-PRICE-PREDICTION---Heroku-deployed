@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>The PsyCat Learner's House Price Prediction App!</title>
+  <link rel="icon" href="../static/images/cat2.jpeg" type="image/icon type">
+  <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
+  
+  
+<style>
+   
+html, body {
+  background: #333;
+  background-image: url("../static/images/housepredict.jpeg");
+  background-size:cover;
+  background-repeat:no-repeat; 
+  background-position:center;
+  height: 100%;
+  overflow: hidden;
+  text-align:center;
+}
+
+.svg-wrapper {
+  height: 100px;
+  margin: 0 auto;
+  position: relative;
+  top: 65%;
+  transform: translateY(-50%);
+  transform: translateX(70%);
+  width: 320px;
+}
+
+.shape {
+  fill: transparent;
+  /* stroke-dasharray: 140 540; */
+  stroke-dashoffset: -474;
+  stroke-width: 6px;
+  stroke:red;
+}
+
+.text a {
+  color:blue;
+  font-family: 'Roboto Condensed';
+  font-weight: bold;
+  font-size: 28px;
+  letter-spacing: 5px;
+  line-height: 40px;
+  position: relative;
+  top: -90px;
+  bottom: -48px;
+  text-decoration: none;
+  margin-bottom: 100px;
+}
+
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540; 
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 900;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.8s draw linear forwards;
+  animation: 0.8s draw linear forwards;
+} */
+    </style>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="svg-wrapper">
+    <svg height="100" width="320" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="f2" x="0" y="0" width="150%" height="150%">
+          <feOffset result="offOut" in="SourceGraphic" dx="10" dy="10" />
+          <feGaussianBlur result="blutOut" in="offOut" stdDeviation="10" />
+          <feBlend in="SourceGraphic" in2 ="blurOut" mode="normal" />
+        </filter>
+      </defs>
+      <rect class="shape" height="100" width="320" filter="url(#f2)" />
+    </svg>
+    <div class="text"><a href="/predictprice">PREDICT YOUR HOME PRICE NOW!</a></div>
+  </div>
+  
+  
+
+</body>
+
+</html>
