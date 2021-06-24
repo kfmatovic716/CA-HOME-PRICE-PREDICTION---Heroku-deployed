@@ -54,9 +54,9 @@ function runFind() {
   // Get the value property of the input element
   var inputCounty = d3.select("#selCounty").property("value");
   var inputHouseType = d3.select("#selHouseType").property("value");
-
+ 
   // Filtering data. Used trim() because county names have additional space after the name. Can be fixed later 
-  var filteredCounty = data.filter(rowItem => rowItem.county.trim() == inputCounty)
+  var filteredCounty = data.filter(rowItem => rowItem.county.trim() == inputCounty.trim())
                             .filter(rowItem => rowItem.house_type === inputHouseType)
   
 
@@ -81,4 +81,4 @@ function runFind() {
   myMap.flyToBounds(bounds);
 }
 
-
+button.on("click", runFind);

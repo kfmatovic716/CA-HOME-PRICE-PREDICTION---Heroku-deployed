@@ -29,8 +29,8 @@
   {% block javascript %}
     <script>
     var data = JSON.parse({{ data | tojson }})
-    var countyItems = JSON.parse({{ countyItems | tojson }})
-    var housetypeItems = JSON.parse({{ housetypeItems | tojson }})
+    var countyItems = {{ countyItems | tojson }}
+    var housetypeItems = {{ housetypeItems | tojson }}
     </script>
   {% endblock %}
 
