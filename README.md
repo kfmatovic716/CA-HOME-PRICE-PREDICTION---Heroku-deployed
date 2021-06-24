@@ -3,10 +3,10 @@
 Website: <a href="#">https://ca-home-price-predict.herokuapp.com/</a>
 <br>
 
-<p><h1><img src="/Dashboard/static/images/cat2.jpeg" width=50 height=50 align="middle"/><strong> The PsyCat Learners</strong><br><h3><emp> MEMBERS:  James Milne |  Katherine Matovic  |  Ellis Mok </emp></h3></h1></p>
+<p><h1><img src="/static/images/cat2.jpeg" width=50 height=50 align="middle"/><strong> The PsyCat Learners</strong><br><h3><emp> MEMBERS:  James Milne |  Katherine Matovic  |  Ellis Mok </emp></h3></h1></p>
 <hr>
 
-<img src="/Dashboard/static/images/housesel.jpeg"/>
+<img src="/static/images/housesel.jpeg"/>
 
 ## California Home Price Prediction by zip code and house type
 <hr>
@@ -30,7 +30,7 @@ Website: <a href="#">https://ca-home-price-predict.herokuapp.com/</a>
 <ul>
     <li>CA map with tooltip </li>
     <p align="center" width="100%">
-    <img src="/Dashboard/static/images/map.PNG"/>
+    <img src="/static/images/map.PNG"/>
     </p>
         <li>Histogram groups data in bins and provides the quickest method to get an idea on the distribution of each attribute in a dataset. It features the center, spread, skewness of the data and can show the presence of outliers and data frequencies. </li>
     <p align="center" width="100%">
@@ -38,7 +38,7 @@ Website: <a href="#">https://ca-home-price-predict.herokuapp.com/</a>
     </p>
     <li>Bar charts that shows the average house prices by county </li>
     <p align="center" width="100%">
-    <img src="/Dashboard/static/images/bar.PNG"/>
+    <img src="/static/images/bar.PNG"/>
     </p>
 </ul>
 
