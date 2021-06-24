@@ -32,7 +32,7 @@ def predictprice():
      # Select a table with distinct county and house type for dropdown menu use
     countyItems = pd.read_sql("SELECT DISTINCT county FROM ca_homeprice ORDER BY county", con)
     housetypeItems = pd.read_sql("SELECT DISTINCT house_type FROM ca_homeprice ORDER BY house_type", con)
-
+    con.close()
     ## Comment this out or delete to read in data from database session above
     # ca_homeprice = pd.read_csv('./static/data/sample_set.csv')
 
