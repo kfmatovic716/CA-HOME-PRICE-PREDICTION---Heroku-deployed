@@ -9,7 +9,7 @@ from flask import Flask, render_template, jsonify
 import os
 
 # Use this to run via Flask. Uncomment this line if running Heroku
-# engine = create_engine("postgresql://postgres:Sofija53!@localhost:5432/ca_homeprice_db")
+# engine = create_engine("postgresql://postgres:<password>@localhost:5432/ca_homeprice_db")
 
 # Use this for Heroku. Uncomment line 12 when using this code
 engine = create_engine(os.environ.get('DATABASE_URL', ''))
@@ -37,6 +37,8 @@ def predictprice():
     # ca_homeprice = pd.read_csv('./static/data/sample_set.csv')
 
     data = ca_homeprice.to_json(orient='records')
+
+    # to access list of counties and housetypes from jsonified data
     countyDrpdown = countyItems.county.to_list()
     housetypeDrpdown = housetypeItems.house_type.to_list()
     print(countyDrpdown)
