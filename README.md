@@ -22,7 +22,6 @@ Website: <a href="#">https://ca-home-price-predict.herokuapp.com/</a>
 ## DATA SOURCES
 <ul>
     <li>House Price data - <a href="https://www.zillow.com/research/data/ ">Zillow website</a></li>
-    <li>Hospital Ratings data - <a href="https://www.kaggle.com/center-for-medicare-and-medicaid/hospital-ratings ">Kaggle </a></li>
     <li>Unemployment Data - <a href="https://data.edd.ca.gov/Labor-Force-and-Unemployment-Rates/Local-Area-Unemployment-Statistics-LAUS-/e6gw-gvii">Socrata API</li>
 </ul>
 
