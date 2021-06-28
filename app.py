@@ -10,7 +10,7 @@ import os
 
 # Uncomment this line if running Heroku
 # Enter password if using this engine
-# engine = create_engine("postgresql://postgres:<password>@localhost:5432/cahomeprice_final_db")
+# engine = create_engine("postgresql://postgres:Sofija53!@localhost:5432/cahomeprice_final")
 
 # Use this for Heroku. Uncomment line 12 when using this code
 engine = create_engine(os.environ.get('DATABASE_URL', ''))
