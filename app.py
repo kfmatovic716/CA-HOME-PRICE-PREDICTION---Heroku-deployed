@@ -8,7 +8,7 @@ from sqlalchemy import create_engine, func
 from flask import Flask, render_template, jsonify
 import os
 
-# Uncomment this line if running Heroku
+# Uncomment this line if running python app.py server
 # Enter password if using this engine
 # engine = create_engine("postgresql://postgres:<password>@localhost:5432/ca_homeprice_db")
 

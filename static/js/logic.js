@@ -67,7 +67,7 @@ function runFind() {
 // Prints out the selected zipcode and estimated price in the tooltip
   filteredCounty.forEach(function(rowItem) {
     markers.addLayer(L.marker([rowItem.lat, rowItem.lng])
-                    .bindPopup("<h4>Zip Code: " + rowItem.zipcode + "</h4> <hr> <h5>Estimated Home Price: $ " + rowItem.est_price + "</h5>"))
+                    .bindPopup("<h4>Zip Code: " + rowItem.zipcode + "</h4> <hr> <h5>Estimated Home Price: $ " + rowItem.est_price.toLocaleString('en-US') + "</h5>"))
   })
 
  // Calculates the location bounds based on user input selection   

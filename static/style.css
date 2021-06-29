@@ -30,7 +30,7 @@ body{
     height: 350px;
     margin-bottom: 50px;
     margin-right: 20px;
-    margin-left: 50px;
+    margin-left: 40px;
     padding-top: 5px;
 }
 
@@ -67,13 +67,11 @@ button {
 #team {
     width: 650px;
     height: auto;
-    /* background: #dfbf9f; */
 }
 
 #methods {
     width: 1100px;
     height: auto;
-    /* background: #dfbf9f; */
     margin-right:10px;
     margin-top:10px;
 }
@@ -86,18 +84,17 @@ button {
 #tools, #datainfo {
     width: 400px;
     height: auto;
-    /* background: #dfbf9f;  */
     margin-top:10px;
     margin-left:15px;
     margin-bottom:10px;
 }
 
 .github {
-    margin-left:5px;
+    margin-left:15px;
 }
 
 /* tableau viz */
-#viz1623472718293, #viz1623510542724, #viz1624597561457, #viz1624597643987 {
+#viz1623472718293, #viz1623510542724, #viz1624849719041, #viz1624597643987 {
     border:rgb(0, 153, 153) 3px solid;
     margin-top: 10px
 }
