@@ -64,7 +64,7 @@ button {
     background-color: whitesmoke;
 }
 
-#team {
+#team, #comments {
     width: 650px;
     height: auto;
 }
