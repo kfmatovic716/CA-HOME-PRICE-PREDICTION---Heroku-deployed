@@ -10,10 +10,10 @@ import os
 
 # Uncomment this line if running python app.py server
 # Enter password if using this engine
-engine = create_engine("postgresql://postgres:Sofija53!@localhost:5432/ca_homeprice_db")
+# engine = create_engine("postgresql://postgres:<password>@localhost:5432/ca_homeprice_db")
 
 # Use this for Heroku. Uncomment line 13 when using this code
-# engine = create_engine(os.environ.get('DATABASE_URL', ''))
+engine = create_engine(os.environ.get('DATABASE_URL', ''))
 
 # Instantiate a Flask app
 app = Flask(__name__)
